@@ -13,11 +13,12 @@
     <div class="row h-100">
 
 <!-- First Column -->
-<div class="col-md-4 border">
+<div class="col-3 border border-dark">
 <!--Row 1 Logo and Title  -->
     <div class="row">
- <div class= "col">
-    <img src="your-logo-here.png" alt="Moma Mail Logo" width="50">
+ <div class= "col d-flex align-items-center">
+    <img src="your-logo-here.png" alt="Moma Mail Logo" width="75">
+    <br>
     <h1>MOMA MAIL</h1>
 
  </div>    
@@ -27,7 +28,7 @@
 <div class="row">
     <div class= "col">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#composeModal">Compose Message</button>
-        <br>
+        
 </div>
 </div>
 
@@ -70,7 +71,7 @@
 
 </div>
 <!-- Second Column: Email's populating -->
-<div class="col-md-4 border full-height">
+<div class="col-3 border border-dark">
     <div class="row border">
         <div class="col">
 <!-- Search Input -->
@@ -144,29 +145,13 @@
         <p><strong>Preview:</strong>Just a friendly reminder about our meeting...</p>
 </div>
 </div>
-<div class="row border email-info">
-    <div class="col">
-        <P><strong>Sender:</strong>John Doe</P>
-        <p><strong>Subject:</strong>Meeting Reminder</p>
-        <p><strong>Date:</strong>Sep 22, 2023</p>
-        <p><strong>Preview:</strong>Just a friendly reminder about our meeting...</p>
-</div>
-</div>
-<div class="row border email-info">
-    <div class="col">
-        <P><strong>Sender:</strong>John Doe</P>
-        <p><strong>Subject:</strong>Meeting Reminder</p>
-        <p><strong>Date:</strong>Sep 22, 2023</p>
-        <p><strong>Preview:</strong>Just a friendly reminder about our meeting...</p>
-</div>
-</div>
+
 <p class="text-center">No New Messages</p>
 
 </div>
 
-
 <!-- Third column, read and reply to e-mails -->
-<div class="col third-column border border-dark">
+<div class="col-6 border border-dark">
     <div class="row">
         <button>Back</button>
         <button>Trash</button>
@@ -175,7 +160,7 @@
     </div>
 
     <!-- E-mail details -->
-    <div class="row email-info e-mail-details">
+    <div class="row email-info">
     <h2>Subject: Meeting Reminder</h2>
     <p>Date: Sep 22, 2023</p>
     <p>Sender: John Doe</p>
@@ -205,12 +190,11 @@
         <div class="modal-header">
           <h5 class="modal-title">Compose Email</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal">
-            <span>&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <input type="text" class="form-control" placeholder="Recipient">
-          <input type="text" class="form-control" placeholder="Your Name">
+          <input type="text" class="form-control" placeholder="Recipient E-mail">
+          <input type="text" class="form-control" placeholder="Sender E-mail">
           <input type="text" class="form-control" placeholder="Subject">
           <textarea class="form-control" placeholder="Message"></textarea>
         </div>

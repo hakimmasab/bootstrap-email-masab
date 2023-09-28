@@ -6,12 +6,7 @@
     margin-bottom: 0.2rem;
     line-height: 1.2;
   }
-
-  .third-column {
-    height: 100%;
-    margin-right: 16px
-  }
-
+  
   .email-message {
     margin: 1rem 0;
     overflow-y: auto;
