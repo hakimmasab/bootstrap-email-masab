@@ -20,3 +20,7 @@
   .reply-area {
         margin: 1rem 0;
       }
+
+  .selected {
+    background-color:rgba(72, 61, 78, 0.13)
+  }
