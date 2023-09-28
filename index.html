@@ -13,7 +13,7 @@
     <div class="row h-100">
 
 <!-- First Column -->
-<div class="col-3 border border-dark">
+<div class="col-lg-3 col-md-0 col-sm-0 border border-dark">
 <!--Row 1 Logo and Title  -->
     <div class="row">
  <div class= "col d-flex align-items-center">
@@ -25,53 +25,24 @@
 </div>
 
 <!-- Row 2: Compose Message Button -->
-<div class="row">
-    <div class= "col">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#composeModal">Compose Message</button>
-        
-</div>
-</div>
 
-<!-- Folder Buttons -->
-<div class="row">
-    <div class="col">
-        <button class="btn btn-outline-secondary w-100">Inbox</button>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col">
-        <button class="btn btn-outline-secondary w-100">Sent</button>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col">
-        <button class="btn btn-outline-secondary w-100">Spam</button>
-    </div>
-</div>
+<div class="d-grid gap-1">
+    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#composeModal">Compose Message</button>
 
-<div class="row">
-    <div class="col">
-        <button class="btn btn-outline-secondary w-100">Trash</button>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col">
-        <button class="btn btn-outline-secondary w-100">Archived</button>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col">
-        <button class="btn btn-outline-secondary w-100">Snoozed</button>
-    </div>
+    <!-- Folder Buttons -->
+    <button class="btn btn-outline-secondary w-100">Inbox <span class="badge bg-secondary">8</span></button>
+    <button class="btn btn-outline-secondary w-100">Sent</button>
+    <button class="btn btn-outline-secondary w-100">Spam</button>
+    <button class="btn btn-outline-secondary w-100">Trash</button>
+    <button class="btn btn-outline-secondary w-100">Archived</button>
+    <button class="btn btn-outline-secondary w-100">Snoozed</button>
 </div>
 
 </div>
 <!-- Second Column: Email's populating -->
-<div class="col-3 border border-dark">
+<div class="col-lg-3 col-md-6 col-sm-12 border border-dark">
     <div class="row border">
         <div class="col">
 <!-- Search Input -->
@@ -82,7 +53,7 @@
     <!--Sample E-mails  -->
     <div class="row border email-info">
         <div class="col">
-            <P><strong>Sender:</strong>John Doe</P>
+            <p><strong>Sender:</strong>John Doe</P>
             <p><strong>Subject:</strong>Meeting Reminder</p>
             <p><strong>Date:</strong>Sep 22, 2023</p>
             <p><strong>Preview:</strong>Just a friendly reminder about our meeting...</p>
@@ -90,7 +61,7 @@
 </div>
 <div class="row border email-info">
     <div class="col">
-        <P><strong>Sender:</strong>John Doe</P>
+        <p><strong>Sender:</strong>John Doe</P>
         <p><strong>Subject:</strong>Meeting Reminder</p>
         <p><strong>Date:</strong>Sep 22, 2023</p>
         <p><strong>Preview:</strong>Just a friendly reminder about our meeting...</p>
@@ -98,7 +69,7 @@
 </div>
 <div class="row border email-info">
     <div class="col">
-        <P><strong>Sender:</strong>John Doe</P>
+        <p><strong>Sender:</strong>John Doe</P>
         <p><strong>Subject:</strong>Meeting Reminder</p>
         <p><strong>Date:</strong>Sep 22, 2023</p>
         <p><strong>Preview:</strong>Just a friendly reminder about our meeting...</p>
@@ -106,7 +77,7 @@
 </div>
 <div class="row border email-info">
     <div class="col">
-        <P><strong>Sender:</strong>John Doe</P>
+        <p><strong>Sender:</strong>John Doe</P>
         <p><strong>Subject:</strong>Meeting Reminder</p>
         <p><strong>Date:</strong>Sep 22, 2023</p>
         <p><strong>Preview:</strong>Just a friendly reminder about our meeting...</p>
@@ -114,7 +85,7 @@
 </div>
 <div class="row border email-info">
     <div class="col">
-        <P><strong>Sender:</strong>John Doe</P>
+        <p><strong>Sender:</strong>John Doe</P>
         <p><strong>Subject:</strong>Meeting Reminder</p>
         <p><strong>Date:</strong>Sep 22, 2023</p>
         <p><strong>Preview:</strong>Just a friendly reminder about our meeting...</p>
@@ -151,12 +122,12 @@
 </div>
 
 <!-- Third column, read and reply to e-mails -->
-<div class="col-6 border border-dark">
-    <div class="row">
-        <button>Back</button>
-        <button>Trash</button>
-        <button>Forward</button>
-        <button>Archive</button>
+<div class="col-lg-6 col-md-6 col-sm-0 border border-dark">
+    <div class="btn-group w-100">
+        <button type="button" class="btn btn-outline-secondary">Back</button>
+        <button type="button" class="btn btn-outline-secondary">Trash</button>
+        <button type="button" class="btn btn-outline-secondary">Forward</button>
+        <button type="button" class="btn btn-outline-secondary">Archive</button>
     </div>
 
     <!-- E-mail details -->
@@ -177,27 +148,30 @@
 
 </div>
 <!-- Response area -->
-<div class="row reply-area">
+<div class="row reply-area gap-1">
 <textarea placeholder="Type your response here..."></textarea>
-<button>Send</button>
+<button type="button" class="btn btn-primary">Send</button>
 </div>
 </div>
 
 <!-- Modal for Compose Window -->
 <div class="modal fade" id="composeModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
+        <!-- Modal Header -->
         <div class="modal-header">
           <h5 class="modal-title">Compose Email</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal">
           </button>
         </div>
+       <!-- Modal Body -->
         <div class="modal-body">
           <input type="text" class="form-control" placeholder="Recipient E-mail">
           <input type="text" class="form-control" placeholder="Sender E-mail">
           <input type="text" class="form-control" placeholder="Subject">
           <textarea class="form-control" placeholder="Message"></textarea>
         </div>
+        <!-- Modal Footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
           <button type="button" class="btn btn-primary">Send</button>
