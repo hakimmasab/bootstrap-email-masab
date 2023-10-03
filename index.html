@@ -1,172 +1,192 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOMA MAIL</title>
-    <link rel="stylesheet" href="styles.css">   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOMA MAIL</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                crossorigin="anonymous">
 
 </head>
+
 <body>
-  <div class="container-fluid full-height">
-    <div class="row h-100">
+        <div class="container-fluid full-height">
+                <div class="row h-100">
 
-<!-- First Column -->
-<div class="col-lg-3 border">
-<!--Row 1 Logo and Title  -->
-    <div class="row">
- <div class= "col d-flex align-items-center">
-    <img src="your-logo-here.png" alt="Moma Mail Logo" width="75">
-    <br>
-    <h1>MOMA MAIL</h1>
+                        <!-- First Column -->
+                        <div class="col-lg-3 border">
+                                <!--Row 1 Logo and Title  -->
+                                <div class="row">
+                                        <div class="col d-flex align-items-center">
+                                                <img src="your-logo-here.png" alt="Moma Mail Logo" width="75">
+                                                <br>
+                                                <h1>MOMA MAIL</h1>
 
- </div>    
-</div>
+                                        </div>
+                                </div>
 
-<!-- Row 2: Compose Message Button -->
+                                <!-- Row 2: Compose Message Button -->
 
-<div class="d-grid gap-1">
-    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#composeModal">Compose Message</button>
+                                <div class="d-grid gap-1">
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                                data-bs-target="#composeModal">Compose Message</button>
 
-    <!-- Folder Buttons -->
-    <button class="btn btn-outline-secondary w-100">Inbox <span class="badge bg-secondary">8</span></button>
-    <button class="btn btn-outline-secondary w-100">Sent</button>
-    <button class="btn btn-outline-secondary w-100">Spam</button>
-    <button class="btn btn-outline-secondary w-100">Trash</button>
-    <button class="btn btn-outline-secondary w-100">Archived</button>
-    <button class="btn btn-outline-secondary w-100">Snoozed</button>
-</div>
+                                        <!-- Folder Buttons -->
+                                        <button class="btn btn-outline-secondary w-100">Inbox <span
+                                                        class="badge bg-secondary">8</span></button>
+                                        <button class="btn btn-outline-secondary w-100">Sent</button>
+                                        <button class="btn btn-outline-secondary w-100">Spam</button>
+                                        <button class="btn btn-outline-secondary w-100">Trash</button>
+                                        <button class="btn btn-outline-secondary w-100">Archived</button>
+                                        <button class="btn btn-outline-secondary w-100">Snoozed</button>
+                                </div>
 
-</div>
-<!-- Second Column: Email's populating -->
-<div class="col-lg-3 col-md-6 col-sm-12 border">
-    <div class="row">
-        <div class="col">
-<!-- Search Input -->
-<input type="text" class="form-control" placeholder="Search Mail">
+                        </div>
+                        <!-- Second Column: Email's populating -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 border">
+                                <div class="row">
+                                        <div class="col">
+                                                <!-- Search Input -->
+                                                <input type="text" class="form-control" placeholder="Search Mail">
+                                        </div>
+                                </div>
+
+                                <!--Sample E-mails  -->
+                                <div class="list-group">
+                                        <div class="active list-group-item list-group-item-action border email-info ">
+                                                <p><strong>Sender: </strong>John Doe</P>
+                                                <p><strong>Subject: </strong>Meeting Reminder</p>
+                                                <p><strong>Date: </strong>Sep 22, 2023</p>
+                                                <p><strong>Preview: </strong>Just a friendly reminder about our
+                                                        meeting...</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border email-info">
+                                                <p><strong>Sender: </strong>John Doe</P>
+                                                <p><strong>Subject: </strong>Meeting Reminder</p>
+                                                <p><strong>Date: </strong>Sep 22, 2023</p>
+                                                <p><strong>Preview: </strong>Just a friendly reminder about our
+                                                        meeting...</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border email-info">
+                                                <p><strong>Sender: </strong>John Doe</P>
+                                                <p><strong>Subject: </strong>Meeting Reminder</p>
+                                                <p><strong>Date: </strong>Sep 22, 2023</p>
+                                                <p><strong>Preview: </strong>Just a friendly reminder about our
+                                                        meeting...</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border email-info">
+                                                <p><strong>Sender: </strong>John Doe</P>
+                                                <p><strong>Subject: </strong>Meeting Reminder</p>
+                                                <p><strong>Date: </strong>Sep 22, 2023</p>
+                                                <p><strong>Preview: </strong>Just a friendly reminder about our
+                                                        meeting...</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border email-info">
+                                                <p><strong>Sender: </strong>John Doe</P>
+                                                <p><strong>Subject: </strong>Meeting Reminder</p>
+                                                <p><strong>Date: </strong>Sep 22, 2023</p>
+                                                <p><strong>Preview: </strong>Just a friendly reminder about our
+                                                        meeting...</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border email-info">
+                                                <P><strong>Sender: </strong>John Doe</P>
+                                                <p><strong>Subject: </strong>Meeting Reminder</p>
+                                                <p><strong>Date: </strong>Sep 22, 2023</p>
+                                                <p><strong>Preview: </strong>Just a friendly reminder about our
+                                                        meeting...</p>
+                                        </div>
+
+                                        <div class="list-group-item list-group-item-action border email-info">
+                                                <P><strong>Sender: </strong>John Doe</P>
+                                                <p><strong>Subject: </strong>Meeting Reminder</p>
+                                                <p><strong>Date: </strong>Sep 22, 2023</p>
+                                                <p><strong>Preview: </strong>Just a friendly reminder about our
+                                                        meeting...</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action border email-info">
+                                                <P><strong>Sender: </strong>John Doe</P>
+                                                <p><strong>Subject: </strong>Meeting Reminder</p>
+                                                <p><strong>Date: </strong>Sep 22, 2023</p>
+                                                <p><strong>Preview: </strong>Just a friendly reminder about our
+                                                        meeting...</p>
+                                        </div>
+                                </div>
+                                <p class="text-center">No New Messages</p>
+
+                        </div>
+
+                        <!-- Third column, read and reply to e-mails -->
+                        <div class="col-lg-6 col-md-6 border">
+                                <div class="btn-group w-100">
+                                        <button type="button" class="btn btn-outline-secondary">Back</button>
+                                        <button type="button" class="btn btn-outline-secondary">Trash</button>
+                                        <button type="button" class="btn btn-outline-secondary">Forward</button>
+                                        <button type="button" class="btn btn-outline-secondary">Archive</button>
+                                </div>
+
+                                <!-- E-mail details -->
+                                <div class="row email-info">
+                                        <h2>Subject: Meeting Reminder</h2>
+                                        <p>Date: Sep 22, 2023</p>
+                                        <p>Sender: John Doe</p>
+                                        <p>Recipient: Jane Doe</p>
+                                </div>
+                                <br>
+
+                                <!-- E-mail Body -->
+                                <div class="row email-message">
+                                        <p>Dear Jane,</p>
+                                        <p>Don't forget about our meeting tomorrow night at 8:00PM.</p>
+                                        <p>Warm regards,</p>
+                                        <p>John</p>
+
+                                </div>
+                                <!-- Response area -->
+                                <div class="row reply-area gap-1">
+                                        <textarea placeholder="Type your response here..."></textarea>
+                                        <button type="button" class="btn btn-primary">Send</button>
+                                </div>
+                        </div>
+
+                        <!-- Modal for Compose Window -->
+                        <div class="modal fade" id="composeModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-xl" role="document">
+                                        <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                        <h5 class="modal-title">Compose Email</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                                        </button>
+                                                </div>
+                                                <!-- Modal Body -->
+                                                <div class="modal-body">
+                                                        <input type="text" class="form-control"
+                                                                placeholder="Recipient E-mail">
+                                                        <input type="text" class="form-control"
+                                                                placeholder="Sender E-mail">
+                                                        <input type="text" class="form-control" placeholder="Subject">
+                                                        <textarea class="form-control" placeholder="Message"></textarea>
+                                                </div>
+                                                <!-- Modal Footer -->
+                                                <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Back</button>
+                                                        <button type="button" class="btn btn-primary">Send</button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
         </div>
-    </div>
 
-    <!--Sample E-mails  -->
-    <div class="list-group">
-    <div class="active list-group-item list-group-item-action border email-info ">
-            <p><strong>Sender: </strong>John Doe</P>
-            <p><strong>Subject: </strong>Meeting Reminder</p>
-            <p><strong>Date: </strong>Sep 22, 2023</p>
-            <p><strong>Preview: </strong>Just a friendly reminder about our meeting...</p>
-</div>
-<div class="list-group-item list-group-item-action border email-info">
-        <p><strong>Sender: </strong>John Doe</P>
-        <p><strong>Subject: </strong>Meeting Reminder</p>
-        <p><strong>Date: </strong>Sep 22, 2023</p>
-        <p><strong>Preview: </strong>Just a friendly reminder about our meeting...</p>
-</div>
-<div class="list-group-item list-group-item-action border email-info">
-        <p><strong>Sender: </strong>John Doe</P>
-        <p><strong>Subject: </strong>Meeting Reminder</p>
-        <p><strong>Date: </strong>Sep 22, 2023</p>
-        <p><strong>Preview: </strong>Just a friendly reminder about our meeting...</p>
-</div>
-<div class="list-group-item list-group-item-action border email-info">
-        <p><strong>Sender: </strong>John Doe</P>
-        <p><strong>Subject: </strong>Meeting Reminder</p>
-        <p><strong>Date: </strong>Sep 22, 2023</p>
-        <p><strong>Preview: </strong>Just a friendly reminder about our meeting...</p>
-</div>
-<div class="list-group-item list-group-item-action border email-info">
-        <p><strong>Sender: </strong>John Doe</P>
-        <p><strong>Subject: </strong>Meeting Reminder</p>
-        <p><strong>Date: </strong>Sep 22, 2023</p>
-        <p><strong>Preview: </strong>Just a friendly reminder about our meeting...</p>
-</div>
-<div class="list-group-item list-group-item-action border email-info">
-        <P><strong>Sender: </strong>John Doe</P>
-        <p><strong>Subject: </strong>Meeting Reminder</p>
-        <p><strong>Date: </strong>Sep 22, 2023</p>
-        <p><strong>Preview: </strong>Just a friendly reminder about our meeting...</p>
-</div>
-
-<div class="list-group-item list-group-item-action border email-info">
-        <P><strong>Sender: </strong>John Doe</P>
-        <p><strong>Subject: </strong>Meeting Reminder</p>
-        <p><strong>Date: </strong>Sep 22, 2023</p>
-        <p><strong>Preview: </strong>Just a friendly reminder about our meeting...</p>
-</div>
-<div class="list-group-item list-group-item-action border email-info">
-        <P><strong>Sender: </strong>John Doe</P>
-        <p><strong>Subject: </strong>Meeting Reminder</p>
-        <p><strong>Date: </strong>Sep 22, 2023</p>
-        <p><strong>Preview: </strong>Just a friendly reminder about our meeting...</p>
-</div>
-</div>
-<p class="text-center">No New Messages</p>
-
-</div>
-
-<!-- Third column, read and reply to e-mails -->
-<div class="col-lg-6 col-md-6 border">
-    <div class="btn-group w-100">
-        <button type="button" class="btn btn-outline-secondary">Back</button>
-        <button type="button" class="btn btn-outline-secondary">Trash</button>
-        <button type="button" class="btn btn-outline-secondary">Forward</button>
-        <button type="button" class="btn btn-outline-secondary">Archive</button>
-    </div>
-
-    <!-- E-mail details -->
-    <div class="row email-info">
-    <h2>Subject: Meeting Reminder</h2>
-    <p>Date: Sep 22, 2023</p>
-    <p>Sender: John Doe</p>
-    <p>Recipient: Jane Doe</p>
-</div>
-<br>
-
-<!-- E-mail Body -->
-<div class="row email-message">
-<p>Dear Jane,</p>
-<p>Don't forget about our meeting tomorrow night at 8:00PM.</p>
-<p>Warm regards,</p>
-<p>John</p>
-
-</div>
-<!-- Response area -->
-<div class="row reply-area gap-1">
-<textarea placeholder="Type your response here..."></textarea>
-<button type="button" class="btn btn-primary">Send</button>
-</div>
-</div>
-
-<!-- Modal for Compose Window -->
-<div class="modal fade" id="composeModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h5 class="modal-title">Compose Email</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal">
-          </button>
-        </div>
-       <!-- Modal Body -->
-        <div class="modal-body">
-          <input type="text" class="form-control" placeholder="Recipient E-mail">
-          <input type="text" class="form-control" placeholder="Sender E-mail">
-          <input type="text" class="form-control" placeholder="Subject">
-          <textarea class="form-control" placeholder="Message"></textarea>
-        </div>
-        <!-- Modal Footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
-          <button type="button" class="btn btn-primary">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
 
 </body>
+
 </html>
